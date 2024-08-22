@@ -1,0 +1,63 @@
+/* List.module.css */
+.container {
+    margin: 20px 25%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.title {
+    color: #333;
+    margin-bottom: 20px;
+
+}
+
+.blogItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.blogTitle {
+    color: #007BFF;
+    margin: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    /* 텍스트가 한 줄로 보이도록 설정 */
+    overflow: hidden;
+    /* 내용이 넘칠 경우 숨김 처리 */
+    text-overflow: ellipsis;
+}
+
+.blogDate {
+    color: #666;
+    margin: 5px 0;
+}
+
+.blogContent {
+    margin: 5px 0;
+    white-space: nowrap;
+    /* 텍스트가 한 줄로 보이도록 설정 */
+    overflow: hidden;
+    /* 내용이 넘칠 경우 숨김 처리 */
+    text-overflow: ellipsis;
+    /* 넘친 내용을 ...로 표시 */
+    max-width: 600px;
+    /* 최대 너비 설정, 필요에 따라 조절 */
+}
+
+
+
+.blogContent,
+.blogTitle,
+.blogDate {
+    flex: 1;
+    /* 버튼을 제외한 나머지 요소들이 공간을 균등하게 차지하도록 합니다 */
+}
+
+.blogContent+.blogDate {
+    margin: 10px;
+    /* 원하는 만큼 여백 추가 */
+}

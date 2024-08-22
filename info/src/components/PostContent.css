@@ -1,0 +1,67 @@
+/* src/components/PostContent.css */
+.detail {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 0 25%;
+    /* 좌우 25% 여백 추가 */
+    height: 900px;
+}
+
+.postheader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.postheaderTop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* 상단 정렬 */
+}
+
+.posttitleAndDate {
+    display: flex;
+    flex-direction: column;
+}
+
+.postblogTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+.postblogDate {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+.postblogCategory {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #007BFF;
+    align-self: flex-start;
+    /* 상단 오른쪽에 위치 */
+}
+
+.postblogContent {
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #333;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+    /* 카테고리 아래에 위치하도록 조정 */
+}

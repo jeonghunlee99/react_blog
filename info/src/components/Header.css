@@ -1,0 +1,31 @@
+.Header {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    margin: 0 25%;
+    /* 좌우에 25%의 여백을 추가 */
+}
+
+.Header>div {
+    display: flex;
+}
+
+.Header .header_center {
+    width: 50%;
+    /* 중앙 부분의 너비를 50%로 설정 */
+    font-size: 25px;
+    justify-content: center;
+}
+
+.Header .header_left {
+    width: 25%;
+    /* 왼쪽 부분의 너비를 25%로 설정 */
+    justify-content: flex-start;
+}
+
+.Header .header_right {
+    width: 25%;
+    /* 오른쪽 부분의 너비를 25%로 설정 */
+    justify-content: flex-end;
+}
